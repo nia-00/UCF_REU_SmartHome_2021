@@ -1,0 +1,12 @@
+lamp on 10
+wb2r open wb2b open db2b open 2
+db2b close 5
+dlb open 2
+dlb close wll open wlf open dlk open 15
+dlk close 10
+wll close wlf close dlb open 2
+db2b open wb2r close wb2b close 5
+db2b close dlb close 5
+dlo open 2
+dlo close 10
+lamp off 0

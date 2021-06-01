@@ -1,0 +1,20 @@
+ac on 10
+heater on ac off 5
+dlo open 1
+dlo close 4
+heater off db1l open 1
+db1l close 4
+db1b open 1
+db1b close 8
+dlb open 1
+dlb close 3
+dlk open 1
+dlk close 15
+dlk open 1
+dlk close 10
+db1l open 1
+db1l close 3
+db1b open 1
+db1b close 7
+db1b open 1
+db1b close 0

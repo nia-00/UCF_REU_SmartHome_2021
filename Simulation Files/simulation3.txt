@@ -1,0 +1,31 @@
+lamp on 30
+db1b open wb1b open wb2r open 2
+db1b close 5
+db2b open db1b open 2
+db2b close db1b close 3
+db1l open 1
+db1l close 3
+dbl open wll open 1
+dbl close 3
+dlk open 2
+dlk close 10
+dlk open 2
+dlk close 10
+dlk open 2
+dlk close 2
+db1l open dlb open 2
+db1l close dlb close 1
+db2b open wb1b close 2 
+wb2r close db1l open 1
+db1l close 3
+db2b open 1
+db2b close 2
+dlb open 1
+dlb close 4
+wll close 2
+dlo open 1
+dlo close 1
+lamp off 0
+
+
+
