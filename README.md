@@ -1,1 +1,1 @@
-# ScaledHome2021
+# UCF_REU_SmartHome_2021
