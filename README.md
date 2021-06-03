@@ -1,6 +1,6 @@
 # UCF_REU_SmartHome_2021
 
-### Table of Contents
+## Table of Contents
 1. [Background](#background)
 2. [Methodology](#methodology)
 3. [Usage](#usage)
@@ -21,3 +21,8 @@ a smart-home program that is energy efficient using a cost effective model.
 
 
 ## Resources
+* [SmartHome 2019 Repository](https://github.com/tjburns/not-a-SmartHome)
+* [Matteo Mendula's Repository](https://github.com/MatteoMendula/ScaledHome_Control_System)
+* [Interaction and Behavior Evaluation for Smart Homes: Data Collection and Analytics in the ScaledHome Project (November 2020)](https://iotreu.cs.ucf.edu/wp-content/uploads/2021/02/Mendula-2020-MSWiM.pdf)
+* [IoT Augmented Physical Scale Model of a Suburban Home (June 2020)](http://iotreu.cs.ucf.edu/wp-content/uploads/2020/04/Burns-2020-ICC20.pdf)
+* [Predicting the Temperature Dynamics of Scaled Model and Real-World IoT-Enabled Smart Homes (December 2019)](http://iotreu.cs.ucf.edu/wp-content/uploads/2019/12/Ling-2019-GLOBECOM.pdf)
