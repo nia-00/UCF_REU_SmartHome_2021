@@ -12,7 +12,7 @@ scale model of a suburban home that can be used to perform accelerated experimen
 in various simulated environments. The data collected with this model will be used
 to create a program that implements smart-home behavior inside the model house to
 automatically react to changes in the environment. Our ultimate goal is to develop
-a smart-home program that is energy efficient using a cost effective model.
+a smart-home program that regulates termperature in an energy efficient manner and is cost effective.
 
 ## Methodology
 
