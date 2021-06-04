@@ -75,6 +75,7 @@ class Home:
     def getStates(self):
         states = []
         # get appliance states
+        states.append(datetime.datetime.now())
         for a in self.appliances:
             states.append(a.getState())
         # get door states
@@ -305,7 +306,8 @@ class ControlTower():
 
         with open("simulation6.txt", "r") as simFile, open("appliance_and_motor_states6.csv", "w") as outFile:
             # This gets the fieldnames for the output file and sets them.
-            fieldnames = list(home.getApps())
+            fieldnames = "time"
+            fieldname.extend(home.getApps())
             fieldnames.extend(home.getDoors())
             fieldnames.extend(home.getWindows())
             out_writer = csv.writer(outFile, delimiter = ',')
