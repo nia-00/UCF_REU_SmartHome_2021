@@ -11,8 +11,8 @@ Detroit, MI - Cool, Humid - March - March 3, 2020
 Jacksonville, FL - Hot, Humid - July - July 26, 2020
 Las Vegas, NV - Hot, Dry - June - June 1, 2020
 
-UCF_REU_SmartHome_2021/Data/Weather/Original_Files/ : Contains weather data for our chosen cities and months. Includes Max Temp,	Avg Temp,	Min Temp,	Humidity (%), Max	Humidity
-(%), and Avg	Humidity (%) Min. Includes monthly averages for the above listed categories. The "Average Difference" section of these spreadsheets calculates the average difference
+UCF_REU_SmartHome_2021/Data/Weather/Original_Files/ : Contains weather data for our chosen cities and months. Includes Max Temp, Avg Temp, Min Temp, Humidity (%), Max Humidity
+(%), and Avg Humidity (%) Min. Includes monthly averages for the above listed categories. The "Average Difference" section of these spreadsheets calculates the average difference
 between each day's weather information and the monthly average weather data. The day with the lowest avergage difference is the particular day we use to model our simulations 
 after. Further down, the hourly weather data for the chosen date is listed.
 
