@@ -18,7 +18,7 @@ the United States (only taking into account temperature and humidity):
 The [Original_Files](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Original_Files)
 folder contains weather data for our chosen cities on our chosen days. This includes Max
 Temp, Avg Temp, Min Temp, Humidity (%), Max Humidity(%), and Avg Humidity (%) Min.
-It also includes monthly averages for the above listed categories. The "Difference"
+It also includes monthly averages for the above listed categories. The "Average Difference"
 section of these spreadsheets calculates the difference between each day's
 weather information and the monthly average weather data. The day with the lowest
 difference is the particular day we use to model our simulations after.
