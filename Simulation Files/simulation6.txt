@@ -1,3 +1,8 @@
+db1l open 1
+db1l close 2
+wll open 4
+dlk open 1
+dlk close 5
 dlo open 1
 dlo close 2
 dlk open 1
