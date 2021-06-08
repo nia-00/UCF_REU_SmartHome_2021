@@ -9,19 +9,19 @@ make our data useful for nationwide, or worldwide, application.  Therefore, we
 chose 5 cities during a particular month that represents the diverse climate of
 the United States (only taking into account temperature and humidity):
 
-* Charlotte, NC - Moderate, Moderate - April - April 21, 2020
-* Denver, CO - Cool, Dry - December - December 4, 2020
+* Charlotte, NC - Moderate, Moderate - April - April 28, 2020
+* Denver, CO - Cool, Dry - April - April 18, 2020
 * Detroit, MI - Cool, Humid - March - March 3, 2020
 * Jacksonville, FL - Hot, Humid - July - July 26, 2020
-* Las Vegas, NV - Hot, Dry - June - June 1, 2020
+* Las Vegas, NV - Hot, Dry - June - June 19, 2020
 
 The [Original_Files](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Original_Files)
 folder contains weather data for our chosen cities on our chosen days. This includes Max
 Temp, Avg Temp, Min Temp, Humidity (%), Max Humidity(%), and Avg Humidity (%) Min.
 It also includes monthly averages for the above listed categories. The "Average Difference"
-section of these spreadsheets calculates the average difference between each day's
+section of these spreadsheets calculates the difference between each day's
 weather information and the monthly average weather data. The day with the lowest
-average difference is the particular day we use to model our simulations after.
+difference is the particular day we use to model our simulations after.
 Further down, the hourly weather data for the chosen date is listed.
 
 The [Monthly/CSV](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Monthly/CSV)
