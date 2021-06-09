@@ -35,7 +35,7 @@ heater on ac off 10
 heater off ac on 10
 heater on ac off 10
 heater off ac on 10
-heater of ac off 10
+heater on ac off 10
 heater off ac on 10
 * person comes back home and goes to drop their stuff in bed2
 dlo open 1
