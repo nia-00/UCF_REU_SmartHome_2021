@@ -10,6 +10,7 @@ from time import strftime
 import pdb
 
 kit = ServoKit(channels=16)
+
 # The Home class holds all of the rooms, appliances, doors, and windows in the
 # house and acts as a hub for large scale commands like opening and closing all
 # the windows and doors.
@@ -46,18 +47,21 @@ class Home:
         return dL
 
 
-    def getDoorNicknames(self):
-        dN = []
-        for d in self.doors:
-            dN.append(d.nickname)
-        return dN
-
-
     def getWindows(self):
         wL = []
         for w in self.windows:
             wL.append(w.name)
         return wL
+
+
+    # These next two functions returns the nicknames of the doors and windows.
+    # These abbreviations are used in the input file to denote which hinge is
+    # being referred to and shorten the strings used in string comparisons.
+    def getDoorNicknames(self):
+        dN = []
+        for d in self.doors:
+            dN.append(d.nickname)
+        return dN
 
 
     def getWindowNicknames(self):
@@ -72,7 +76,6 @@ class Home:
     def getStates(self):
         states = []
         # get appliance states
-        states.append(strftime("%H:%M:%S"))
         for a in self.appliances:
             states.append(a.getState())
         # get door states
@@ -85,7 +88,7 @@ class Home:
 
 
     # The next few functions add different things to the house so it can be built
-    # in the controlTower class
+    # in the controlTower class.
     def addRoom(self, newRoom):
         self.rooms.append(newRoom)
 
@@ -160,15 +163,21 @@ class Home:
         for ap in appliances:
             output += "\n\t~" + ap
 
+
 # The Room class acts as an organizational vehicle for the house. It contains all
 # the doors and windows associated with an individual room in the house.
 class Room:
+
+    # Rooms only have a name, a door list, and a window list. There is no associated
+    # nickname with a room since it is currently only being used as an
+    # organizatioal tool.
     def __init__(self, name, door_list, window_list):
         self.name = name
         self.door_list = door_list
         self.window_list = window_list
 
 
+    # These two functions add doors and windows to each room.
     def addRoom(self, newRoom):
         self.door_list.append(newRoom)
 
@@ -177,6 +186,7 @@ class Room:
         self.window_list.append(newWindow)
 
 
+    # toString function.
     def __str__(self):
         output = "\t~Room: " + name + "\n\t\t**Doors**"
         for door in door_list:
@@ -186,21 +196,30 @@ class Room:
                 output += "\n\t\t-" + window
         return output
 
+
 # The Motor class is a parent class for all the objects in the house that can be
 # controlled (i.e. doors, windows, and appliances).
 class Motor:
+    # Every motor has a name (to be used when printing the well known name of the
+    # object), a nickname (to be used in the input file), a pin (to refer to
+    # a specific pin on the RaspberryPi board), and a state (to determine if the
+    # motor is open/on or closed/off).
     def __init__(self, name, nickname, pin):
         self.name = name
         self.nickname = nickname
         self.pin = int(pin)
         self.state = 0
 
+
+    def getState(self):
+        return self.state
+
+
+    # toString function
     def __str__(self):
         out = "This is a " + self.name + " with the pin number " + str(self.pin) + "."
         return out
 
-    def getState(self):
-        return self.state
 
 # The Hinge class is for the doors and windows of the house. It controls the
 # opening and closing mechanism.
@@ -227,6 +246,7 @@ class Hinge(Motor):
         else:
             self.closingAngle = 60
 
+    # These functions open and close the hinge.
     def openHinge(self):
         print('opening ' + self.name + '...')
         kit.servo[self.pin].angle = self.openingAngle
@@ -243,11 +263,13 @@ class Hinge(Motor):
 # temperature (i.e. the heater, lamp, etc.). It controls the on and off
 # mechanism.
 class Appliance(Motor):
+    # The appliance names and the appliance nicknames are the same thing.
     def __init__(self, name, pin):
         super().__init__(name, name, pin)
         GPIO.setup(self.pin, GPIO.OUT)
 
 
+    # These functions turn the appliance on and off.
     def turnOn(self):
         print('turning on ' + self.name + '...')
         GPIO.output(self.pin, GPIO.HIGH)
@@ -259,9 +281,13 @@ class Appliance(Motor):
         GPIO.output(self.pin, GPIO.LOW)
         self.state = 0
 
-
+# The ControlTower class is where everything is built and controlled from.
 class ControlTower():
 
+    # This function takes the nickname of an object, a list of nicknames, and a
+    # list of objects that correspond to the nicknames. It will return the object
+    # that matches the nickname it is passed from the input file if it finds it.
+    # Otherwise it returns None.
     def getObject(self, name, listOfNames, listOfObjects):
         try:
             index = listOfNames.index(name)
@@ -269,12 +295,15 @@ class ControlTower():
         except ValueError:
             return None
 
-
-    def readInstructions(self, home, filename):
+    # This function takes in a home that has already been built and runs a simulation
+    # on the house. It reads commands from a text file and executes them accordingly.
+    # After each line in the input file, it outputs the states of all the motors
+    # to an output csv file to be examined and analyzed later.
+    def readInstructions(self, home, inFile, outFile):
         print('Starting Simulation...')
 
-        with open(filename, "r") as simFile, open("appliance_and_motor_states1.csv", "w") as outFile:
-            # get the column titles for the csv file
+        with open(filename, "r") as simFile, open(outFile, "w") as outFile:
+            # This gets the fieldnames for the output file and sets them.
             time_header = "Time on " + strftime("%d %b %Y")
             fieldnames = [time_header]
             fieldnames.extend(list(home.getApps()))
@@ -283,7 +312,8 @@ class ControlTower():
             out_writer = csv.writer(outFile, delimiter = ',')
             out_writer.writerow(fieldnames)
 
-            # save the list of names and objects we need to use in the for loop to save time
+            # Here we save the lists of names/nicknames along with the list of the
+            # corresponding objects to save time in the loop below.
             appsName = home.getApps()
             doorsName = home.getDoorNicknames()
             windowsName = home.getWindowNicknames()
@@ -303,10 +333,13 @@ class ControlTower():
                 current = None
                 lineLen = len(splitLine)
                 # This for loop goes through a single line, word by word, and parses it.
-                # If the current word is an appliance, it turns it on/off based on the next
-                # command. Same with doors and windows. If the string is an integer, that
-                # represents the time we remain in the current state
                 for i in range(0, lineLen, 2):
+                    # If the first string in the line is a *, that means this is a
+                    # comment line. The loop skips over this line
+                    if splitLine[i] == '*':
+                        break
+                    # First we check if the current string refers to an appliance
+                    # and control it based on the command that follows it.
                     current = self.getObject(splitLine[i], appsName, apps)
                     if current != None:
                         if splitLine[i + 1] == "on":
@@ -316,30 +349,41 @@ class ControlTower():
                         else:
                             pdb.set_trace()
                             print("Invalid input on word " + str(i) + " in the following line: " + line + "\t" + splitLine[i])
+                    # Then we check if the current string refers to a door or window
+                    # and control it based on the command that follows it.
                     current = self.getObject(splitLine[i], doorsName, doors)
                     if current == None:
                         current = self.getObject(splitLine[i], windowsName, windows)
                     if current != None:
-                        # get the next word and open or close it
                         if splitLine[i + 1] == "open":
                             current.openHinge()
                         elif splitLine[i + 1] == "close":
                             current.closeHinge()
                         else:
                             print("Invalid input on word " + str(i) + " in the following line: " + line + "\t" + splitLine[i])
+                    # Finally, we check if the current string is a number. This
+                    # number tells us how many seconds the house should remain
+                    # in the current state
                     if splitLine[i].isnumeric():
                         timeSkip = int(splitLine[i])
                         break
 
+                # At the end of each line we output the state of all the motors
+                # in the house and wait for the amount of time specified in the line.
                 out_writer.writerow(home.getStates())
                 time.sleep(timeSkip)
 
         print("\nEnd of simulation")
 
+
+    # **side project** This function will "build" the house using a textfile with
+    # the specifications of everything in it.
     def buildHouse(house):
         # make house object
         # open build house text file
-        # return house
+        # make and add all appliances
+        # make and add all doors and windows
+        # make all rooms and add doors and windows to them
         return house
 
 
@@ -368,6 +412,8 @@ class ControlTower():
         doorList = [bed2_bath, bed1_living, living_kitchen, living_bath, bed1_bath, living_outside, bed1_outside]
 
         # --windows--
+        # nicknaming convention: w + the initials of the door name. Example: wb1l
+        #                       is the -W-indow in -B-edroom -1- on the -L-eft side
         bed1_left = Hinge("Bedroom 1 Left Window", "wb1l", 8)
         living_left = Hinge("Living Room Left Window", "wll",  9)
         bed2_right = Hinge("Bedroom 2 Right Window", "wb2r", 10)
@@ -393,29 +439,37 @@ class ControlTower():
         #bed1_left.openHinge()
         #time.sleep(5)
         #bed1_left.closeHinge()
-        #time.sleep(2)
+
         #fan.turnOn()
         #time.sleep(5)
         #lamp.turnOff()
+
         #scaledHome.openEverything()
         #time.sleep(5)
         #scaledHome.closeEverything()
 
-        #self.testFunct()
-        #time.sleep(5)
-
-        # incorporate filename here
         self.readInstructions(scaledHome, filename)
 
         #print(scaledHome.getDoors())
 
-        # make sure to always do GPIO.cleanup() at the end of running bc otherwise
-        # it will mess up the appliances
+        # Make sure to have GPIO.cleanup() at the end of the program to reset
+        # all of the appliances before the program terminates.
         GPIO.cleanup()
 
 
 
 if __name__ == "__main__":
+    inFile = "simulation1.txt"
+    outFile = "appliance_and_motor_states1.csv"
+
+    # inFile = "simulation2.txt"
+    # outFile = "appliance_and_motor_states2.csv"
+
+    # inFile = "simulation3.txt"
+    # outFile = "appliance_and_motor_states3.csv"
+
+    # inFile = "simulation4.txt"
+    # outFile = "appliance_and_motor_states4.csv"
+
     start = ControlTower()
-    filename = "simulation1.txt"
-    start.main(filename)
+    start.main(inFile, outFile)
