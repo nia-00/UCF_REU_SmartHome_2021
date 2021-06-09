@@ -25,22 +25,19 @@ to using nicknames. The nicknaming convention is as follows:
 
 ## Simulation Description
 
-There are 6 different kinds of simulations. Each location has a version of all the
+There are 3 different kinds of simulations. Each location has a version of all the
 simulations with differences in outdoor appliances to model the changes in that
 location's temperature and humidity. Below are descriptions of each kind of simulation
 a location will have.
 
 * **Simulation 1:** These simulate a single person waking up in the morning,
-getting ready for work, and leaving for the day.
-* **Simulation 2:** These simulate a single person coming back from work, preparing
-dinner, getting ready for bed, and going to sleep.
-* **Simulation 3:** These simulate two people going about their morning routine,
-and leaving together.
-* **Simulation 4:** These simulate two people getting home and going about their
-nightly routine together.
-* **Simulation 5:** These simulate a family of three getting ready for the day.
+getting ready for work, and leaving for the day. The house remains empty for a bit
+and then the person comes back from work, prepares dinner and gets ready for bed.
+* **Simulation 2:** These simulate two people going about their morning routine,
+and leaving together. The house remains empty for a bit and then the two people
+get back home and go about their nightly routine together.
+* **Simulation 3:** These simulate a family of three getting ready for the day.
 Two people reside in Bedroom 1 and one person resides in Bedroom 2. At the end
 of the simulation, two people leave the home and one person stays behind and
-continues to move about the house.
-* **Simulation 6:** These simulate a family of three at the end of a typical weekday.
-Two people return home and the three people have dinner together and prepare for bed.
+continues to move about the house. At the end of the day, the two that left get
+back home, the three have dinner together and go about their nightly routine.
