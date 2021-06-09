@@ -284,6 +284,17 @@ class Appliance(Motor):
 # The ControlTower class is where everything is built and controlled from.
 class ControlTower():
 
+    # This function takes a number and returns true if it is an integer or a float.
+    def is_number(self, num):
+        if num.isnumeric():
+            return True
+        else:
+            try:
+                float(num)
+                return True
+            except ValueError:
+                return False
+
     # This function takes the nickname of an object, a list of nicknames, and a
     # list of objects that correspond to the nicknames. It will return the object
     # that matches the nickname it is passed from the input file if it finds it.
@@ -364,7 +375,7 @@ class ControlTower():
                     # Finally, we check if the current string is a number. This
                     # number tells us how many seconds the house should remain
                     # in the current state
-                    if splitLine[i].isnumeric():
+                    if is_number(splitLine[i]):
                         timeSkip = int(splitLine[i])
                         break
 
