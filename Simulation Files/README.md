@@ -11,6 +11,10 @@ are toggled on or off. Then, doors and windows are opened or closed. The last pa
 of each line is a number, representing the number of seconds the house should
 remain in the current state.
 
+In order to make the simulation files more readable, we have added commenting
+capabilities. To signal that a line is a comment instead of a command, start the
+line with "* ". The space after the asterisk is necessary.
+
 The appliances are referred to by name however, the doors and windows are referred
 to using nicknames. The nicknaming convention is as follows:
 - The first letter designates whether we are referring to a door (d) or window (w).
@@ -24,7 +28,7 @@ to using nicknames. The nicknaming convention is as follows:
 There are 6 different kinds of simulations. Each location has a version of all the
 simulations with differences in outdoor appliances to model the changes in that
 location's temperature and humidity. Below are descriptions of each kind of simulation
-a location will have. 
+a location will have.
 
 * **Simulation 1:** These simulate a single person waking up in the morning,
 getting ready for work, and leaving for the day.
