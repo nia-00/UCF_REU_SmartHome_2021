@@ -1,31 +1,158 @@
+* start appliances to get to target temp
 lamp on 30
-db1b open wb1b open wb2r open 2
-db1b close 5
-db2b open db1b open 2
-db2b close db1b close 3
+* family wakes up and goes about their morning
+* bed 1 is parents bed2 is child
+* 2 people leave bed 1, 1 goes to bath 1 goes to living rm
+db1b open db1l open 1
+db1b close db1l close 4
+* 1 person start breakfast in kitchen and is joined by other parent
+dlk open 1
+dlk close 3
+dlb open 1
+dlb close 2
+* child wakes and goes to kitchen 
+db2b open 1
+db2b close 1
+dlk open 1
+dlk close 5
+dlb open 1
+dlb close 3
+dlk open 1
+dlk close 3
+* family opens window and eats
+wkr open 15
+* 2 people leave kitchen and go to bedrooms
+dlk open 1
+dlk close 3
+dlb open 1
+db1l open dlb close 3
+db2b open wkr close 3
+* 2 people leave bedrooms and meet 3rd person in living rm
+db2b close 2
+dlb open 1
+dlb close 1
+db1l close 5
+dlk open 1
+dlk close 15
+* 2 people leave and 1 person remains in the house
+dlo open 1
+dlo close 2
+* 1 person opens living rm window, stays in living rm, then goes to bath
+wlf open 15
+dlb open 1
+dlb close 5
+dlb open 1
+dlb close 15
+* 1 person closes living rm window and goes to bed1
+wlf close 3
 db1l open 1
-db1l close 3
-dbl open wll open 1
-dbl close 3
-dlk open 2
-dlk close 10
-dlk open 2
-dlk close 10
-dlk open 2
+db1l close 10
+* they go back to living and go to bath again
+db1l open 1
+db1l close 13
+dlb open 1
+dlb close 5
+dlb open 1
+dlb close 10
+* 1 person goes to kitchen to start lunch
+dlk open 1
+dlk close 7.5
+* 2 people come back for lunch 1 goes to kitchen 1 to bed2
+dlo open 1
+dlo close 2
+dlk open .5
+dlb open .5
+dlk close .5
+dlb close 2
+db2b open 3
+db2b close 4
+* 1 person goes from bed2 to kitchen
+dlb open 1
+dlb close 2
+dlk open 1
+dlk close
+* the 3 eat lunch and 1 person leaves for the afternoon
+wkr open 5
+dlk open 1
+dlk close 3
+dlo open 1
+dlo close 
+* 2 people remain in the house, they leave kitchen
+* 1 person stays in living rm the other goes to bed2
+wkr close 3
+dlk open 1
 dlk close 2
-db1l open dlb open 2
-db1l close dlb close 1
-db2b open wb1b close 2 
-wb2r close db1l open 1
-db1l close 3
+dlb open 1
+dlb close 2
+db2b open 1
+db2b close 10
+* person in living rm goes to bed1
+db1l open 1
+db1l close 4
+* person in bed2 goes to bath
+db2b open 1
+db2b close 4
+db2b open 1
+db2b close 5
+* person in bed1 goes back to living rm
+db1l open 1
+db1l close 7
+* person in bed2 goes to living rm
 db2b open 1
 db2b close 2
 dlb open 1
-dlb close 4
-wll close 2
+dlb close 5
+wll open 10
+* 1 person in living goes to kitchen to start dinner
+dlk open 1
+dlk close 5
+* 1 person comes back in the afternoon 
 dlo open 1
-dlo close 1
+dlo close 5
+wll close 3
+* 1 person goes to kitchen and 1 goes to bath then bed1
+dlk open 1
+dlk close 1
+dlb open 1
+dlb close 5
+db1b open 1
+db1b close 4
+* person in bed1 goes to kitchen
+db1l open 1
+db1l close 4
+dlk open 1
+dlk close 3
+* family opens windows and eats
+wkr open wkf open 15
+* 2 people leave kitchen and go to bed1
+dlk open 1
+dlk close 4
+db1l open 1
+db1l close 8
+* person in kitchen closes windows and goes to living rm
+wkr close 1
+wkf close 1
+dlk open 1
+dlk close 3
+* 2 people in bed1 go to living and the 3 relax there
+db1l open 1
+db1l close 20
+* 2 people go to bed1 1 person goes to bath then bed2
+db1l open dlb open 1
+db1l close dlb close 5
+db2b open 1
+* 1 person from bed1 goes to bath as 1 person leaves to bed2
+db1b open 1
+db2b close 1
+db1b close 7
+* 1 person in bed1 opens window then swtiches with person in bath
+wb1l open 1
+db1b open 1
+db1b close 5
+db1b open 1
+db1b close 7
+* bed1 window is closed and person in bath goes back to bed1 to sleep
+wb1l close 2
+db1b open 1
+db1b close 3
 lamp off 0
-
-
-
