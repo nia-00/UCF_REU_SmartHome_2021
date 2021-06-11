@@ -42,7 +42,7 @@ heater on ac off 10
 heater off ac on 10
 heater on ac off 10
 heater off ac on 10
-heater of ac off 10
+heater on ac off 10
 heater off ac on 10
 * people return and 1 goes to kitchen 1 goes to bed2
 dlo open 1
