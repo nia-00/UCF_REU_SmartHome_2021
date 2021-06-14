@@ -41,4 +41,5 @@ to 6:00 PM. The afternoon phase of the simulation takes 4 hours of real time and
 runs from 6:00 PM to 10:00 PM. For each location we selected the temperatures and
 humidities at these key times, as well as at the hottest part of the day. To scale
 the temperature and humidity we used the following equation:
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=SH_{Temp}&space;=&space;\frac{target_{City}&space;-&space;min_{City}}{max_{City}&space;-&space;min_{City}}&space;\times&space;(max_{SmartHome}&space;-&space;min_{SmartHome})&space;&plus;&space;min_{SmartHome}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SH_{Temp}&space;=&space;\frac{target_{City}&space;-&space;min_{City}}{max_{City}&space;-&space;min_{City}}&space;\times&space;(max_{SmartHome}&space;-&space;min_{SmartHome})&space;&plus;&space;min_{SmartHome}" title="SH_{Temp} = \frac{target_{City} - min_{City}}{max_{City} - min_{City}} \times (max_{SmartHome} - min_{SmartHome}) + min_{SmartHome}" /></a>
