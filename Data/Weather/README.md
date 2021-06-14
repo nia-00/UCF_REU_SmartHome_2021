@@ -31,3 +31,14 @@ The [Daily](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weat
 folder contains hourly temperature and humidity data of the cities for the day we
 selected(see lines 8-12). It also contains a folder of this data represented in
 multi-line graphs.
+
+The [Weather Target to Scaled File](https://github.com/nia-00/UCF_REU_SmartHome_2021/blob/main/Data/Weather/Weather_Target_To_Scaled_Charts.pdf)
+file shows the temperature and humidity benchmarks for each location we chose and
+their scaled equivalent. Each day starts at 7:00 AM and we allotted 1 hour and 30
+minutes of real time for the morning phase of each simulation. The middle phase
+of the simulation takes 9 hours and 30 minutes of real time and runs from 8:30 AM
+to 6:00 PM. The afternoon phase of the simulation takes 4 hours of real time and
+runs from 6:00 PM to 10:00 PM. For each location we selected the temperatures and
+humidities at these key times, as well as at the hottest part of the day. To scale
+the temperature and humidity we used the following equation:
+<a href="https://www.codecogs.com/eqnedit.php?latex=SH_{Temp}&space;=&space;\frac{target_{City}&space;-&space;min_{City}}{max_{City}&space;-&space;min_{City}}&space;\times&space;(max_{SmartHome}&space;-&space;min_{SmartHome})&space;&plus;&space;min_{SmartHome}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SH_{Temp}&space;=&space;\frac{target_{City}&space;-&space;min_{City}}{max_{City}&space;-&space;min_{City}}&space;\times&space;(max_{SmartHome}&space;-&space;min_{SmartHome})&space;&plus;&space;min_{SmartHome}" title="SH_{Temp} = \frac{target_{City} - min_{City}}{max_{City} - min_{City}} \times (max_{SmartHome} - min_{SmartHome}) + min_{SmartHome}" /></a>
