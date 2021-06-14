@@ -32,7 +32,7 @@ folder contains hourly temperature and humidity data of the cities for the day w
 selected(see lines 8-12). It also contains a folder of this data represented in
 multi-line graphs.
 
-The [Weather Target to Scaled](https://github.com/nia-00/UCF_REU_SmartHome_2021/blob/main/Data/Weather/Weather_Target_To_Scaled_Charts.pdf)
+The [Weather Target to Scaled Charts](https://github.com/nia-00/UCF_REU_SmartHome_2021/blob/main/Data/Weather/Weather_Target_To_Scaled_Charts.pdf)
 file shows the temperature and humidity benchmarks for each location we chose and
 their scaled equivalent. Each day starts at 7:00 AM and we allotted 1 hour and 30
 minutes of real time for the morning phase of each simulation. The middle phase
