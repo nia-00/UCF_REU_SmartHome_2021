@@ -1,3 +1,4 @@
+* MORNING PHASE  *
 * start appliances to get to target temp
 lamp on 30
 * both people wake up start their mornings
@@ -34,6 +35,7 @@ dlb close 4
 wll close 2
 dlo open 1
 dlo close 1
+* MID-DAY PHASE *
 * the house is empty
 ac on 10
 heater on ac off 10
@@ -44,6 +46,7 @@ heater on ac off 10
 heater off ac on 10
 heater on ac off 10
 heater off ac on 10
+* EVENING PHASE *
 * people return and 1 goes to kitchen 1 goes to bed2
 dlo open 1
 dlo close 3 
