@@ -27,8 +27,11 @@ to using nicknames. The nicknaming convention is as follows:
 
 There are 3 different kinds of simulations. Each location has a version of all the
 simulations with differences in outdoor appliances to model the changes in that
-location's temperature and humidity. Below are descriptions of each kind of simulation
-a location will have.
+location's temperature and humidity. The simulations are broken up into three
+phases: morning, mid-day, and evening. Each phase has different time scaling based
+on the changes in temperature observed on our chosen day for each location. These
+specifications can be found in the notes in each simulation file. Below are
+descriptions of each kind of simulation a location will have.
 
 * **Simulation 1:** These simulate a single person waking up in the morning,
 getting ready for work, and leaving for the day. The house remains empty for a bit
