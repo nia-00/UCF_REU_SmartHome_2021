@@ -44,30 +44,30 @@ def combine_outputs(file1, file2):
 
             # This loop goes through each row of both lists, going back and forth between the two
             for i in range(length):
-            # Write the current lines for the actuators and sensors
-            outLine = [sensorData[lineS][0]]
-            outLine.extend([motorData[lineM][0]])
-            outLine.extend(sensorData[lineS][1:])
-            outLine.extend(motorData[lineM][1:])
-            outWriter.writerow(outLine)
+                # Write the current lines for the actuators and sensors
+                outLine = [sensorData[lineS][0]]
+                outLine.extend([motorData[lineM][0]])
+                outLine.extend(sensorData[lineS][1:])
+                outLine.extend(motorData[lineM][1:])
+                outWriter.writerow(outLine)
 
-            # if we are at the end of both csv files
-            if (lineS + 1) == sensorLen and (lineM + 1) == motorLen:
-                break
-            # if motor time is bigger than sensor time, update sensor
-            elif currentMotor > currentSensor:
-                lineS += 1
-                currentSensor = sensorData[lineS][0]
-            # if sensor time is bigger than motor time, update motor
-            elif currentMotor < currentSensor:
-                lineM += 1
-                currentMotor = motorData[lineM][0]
-            # if both times are equal, update both
-            else:
-                i += 1
-                lineS += 1
-                lineM += 1
-                currentSensor = sensorData[lineS][0]
-                currentMotor = motorData[lineM][0]
+                # if we are at the end of both csv files
+                if (lineS + 1) == sensorLen and (lineM + 1) == motorLen:
+                    break
+                # if motor time is bigger than sensor time, update sensor
+                elif currentMotor > currentSensor:
+                    lineS += 1
+                    currentSensor = sensorData[lineS][0]
+                # if sensor time is bigger than motor time, update motor
+                elif currentMotor < currentSensor:
+                    lineM += 1
+                    currentMotor = motorData[lineM][0]
+                # if both times are equal, update both
+                else:
+                    i += 1
+                    lineS += 1
+                    lineM += 1
+                    currentSensor = sensorData[lineS][0]
+                    currentMotor = motorData[lineM][0]
 
 combine_outputs("appliance_and_motor_states1.csv", "mondayAfternoonTest.csv")
