@@ -1,19 +1,8 @@
 * MORNING PHASE *
 * start appliances to get to target temp
-lamp on 40
-lamp off 5
-lamp on 40
-lamp off 5
-lamp on 40
-lamp off 5
-lamp on 40
-lamp off 5
-lamp on 40
-lamp off 5
-lamp on 40
-lamp off 5
+lamp on 270
 * person wakes up and opens windows in bed2
-lamp on wb2r open 3
+wb2r open 3
 wb2b open 3
 * person goes from bed2 to bath to living rm and opens windows in living rm
 db2b open 3
@@ -23,18 +12,15 @@ dlb close 9
 wll open 3
 wlf open 9
 * person goes to kitchen to eat then comes out and closes living rm windows
-dlk open 1
-lamp off 2
+dlk open 3
 dlk close 3
-lamp on dlk open 3
+dlk open 3
 dlk close 9
 wlf close 6
 wll close 6
 * person goes back to bed 2 thru the bath and closes windows
 dlb open 3
-db2b open 13
-lamp off 5
-lamp on 3
+db2b open 21
 wb2r close 3
 wb2b close 3
 * person walks back out of bed 2 and bath and leaves house
@@ -43,97 +29,51 @@ dlb close 6
 dlo open 3
 dlo close 9
 * MID-DAY PHASE *
-lamp on 7
-lamp off 5
 * house is empty
-lamp on ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
+ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
 * AFTERNOON PHASE
 * person comes back home and goes to drop their stuff in bed2
 heater off lamp off 20
