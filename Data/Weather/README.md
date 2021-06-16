@@ -15,6 +15,14 @@ the United States (only taking into account temperature and humidity):
 * Jacksonville, FL - Hot, Humid - July - July 26, 2020
 * Las Vegas, NV - Hot, Dry - June - June 19, 2020
 
+The [Daily](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Original_Files)
+folder contains hourly temperature and humidity data of the cities for the day we
+selected(see lines 8-12). It also contains a folder of this data represented in
+multi-line graphs.
+
+The [Monthly/CSV](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Monthly/CSV)
+folder contains daily weather data of the cities for the month we selected (see lines 8-12).
+
 The [Original_Files](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Original_Files)
 folder contains weather data for our chosen cities on our chosen days. This includes Max
 Temp, Avg Temp, Min Temp, Humidity (%), Max Humidity(%), and Avg Humidity (%) Min.
@@ -23,14 +31,6 @@ section of these spreadsheets calculates the difference between each day's
 weather information and the monthly average weather data. The day with the lowest
 difference is the particular day we use to model our simulations after.
 Further down, the hourly weather data for the chosen date is listed.
-
-The [Monthly/CSV](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Monthly/CSV)
-folder contains daily weather data of the cities for the month we selected (see lines 8-12).
-
-The [Daily](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Original_Files)
-folder contains hourly temperature and humidity data of the cities for the day we
-selected(see lines 8-12). It also contains a folder of this data represented in
-multi-line graphs.
 
 The [Weather Scaled Charts](https://github.com/nia-00/UCF_REU_SmartHome_2021/blob/main/Data/Weather/Weather_Target_To_Scaled_Charts.pdf)
 file shows the temperature and humidity benchmarks for each location we chose and
