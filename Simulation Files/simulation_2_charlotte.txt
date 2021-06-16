@@ -85,44 +85,44 @@ heater off ac on 30
 heater on ac off 30
 * EVENING PHASE *
 * people return and 1 goes to kitchen 1 goes to bed2
-lamp off heater off 20
-dlo open 5
-dlo close 35 
-dlk open 5
-dlk close 20
-dlb open 5
-dlb close 80
-db2b open 30
+lamp off heater off 10
+dlo open 1
+dlo close 7
+dlk open 1
+dlk close 4
+dlb open 1
+dlb close 14
+db2b open 6
 * 1 person goes from bed2 to kitchen
-db2b close 30
-dlb open 5
-dlb close 15
-dlk open 5
-dlk close 30
+db2b close 6
+dlb open 1
+dlb close 3
+dlk open 1
+dlk close 6
 * they open dining windows and have dinner
-wkr open 5
-wkf open 120
-wkr close 5
-wkf close 10
+wkr open 1
+wkf open 20
+wkr close 1
+wkf close 3
 * they leave, go to bed1 and then go to backyard
-dlk open 5
-dlk close 60
-db1l open 5
-db1l close 15
-db1o open 5
-db1o close 270
+dlk open 1
+dlk close 12
+db1l open 1
+db1l close 3
+db1o open 1
+db1o close 50
 * they come back from backyard and get ready for bed
-db1o open 5
-db1o close 15
-db1b open 5
-db1b close 60
-db2b open 5
-db2b close 15
-db1b open 5
-db1b close 90 
-db1b open 5
-db1b close 210
-db1l open 15
-dlk open 30
-dlk close 15
+db1o open 1
+db1o close 3
+db1b open 1
+db1b close 14
+db2b open 1
+db2b close 3
+db1b open 1
+db1b close 10 
+db1b open 1
+db1b close 40
+db1l open 3
+dlk open 6
+dlk close 3
 db1l close 0
