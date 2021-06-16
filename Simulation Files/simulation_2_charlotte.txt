@@ -1,196 +1,128 @@
 * MORNING PHASE  *
 * start appliances to get to target temp
-lamp on 15
+lamp on 270
 * both people wake up start their mornings
 * 1 person goes to bath other opens windows in bed2
-db1b open 5
-wb2b open 5
-wb2r open 10
-db1b close 5
-lamp off 5
-lamp on 20
+db1b open 2
+wb2b open 2
+wb2r open 4
+db1b close 6
 * the 2 people switch off in bath
-db2b open db1b open 5
-db2b close db1b close 15
-lamp off 5
-lamp on 10
+db2b open db1b open 2
+db2b close db1b close 8
 * people go from bed1 and bath to living rm
-db1l open 5
-db1l close 10
-dbl open wll open 5
-dbl close 5
+db1l open 2
+db1l close 4
+dbl open wll open 2
+dbl close 2
 * 1 person goes to kitchen, then the other goes, then they leave together
-dlk open 5
-lamp off dlk close 5
-lamp on 25
-dlk open 5
-dlk close 10
-lamp off 5
-lamp on 40
-lamp off 5
-lamp on 30
-dlk open 5
-dlk close 5
-lamp off 5
-lamp on 5
+dlk open 2
+dlk close 8
+dlk open 2
+dlk close 32
+dlk open 2
+dlk close 6
 * they go back to their rooms and close open windows
-db1l open 5
-dlb open 5
-db1l close 5
-dlb close 5
-db2b open wb1b close 10 
-wb2r close db1l open 5
+db1l open 2
+dlb open 2
+db1l close 2
+dlb close 2
+db2b open wb1b close 4
+wb2r close db1l open 2
 * they go to the living rm and leave the house together
-lamp off db1l close db2b open 5
-lamp on db2b close 10
-dlb open 5
-dlb close 5
-wll close 10
-dlo open 5
-dlo close 5
-lamp off 5
+db1l close db2b open 2
+db2b close 4
+dlb open 2
+dlb close 2
+wll close 4
+dlo open 2
+dlo close 4
 * MID-DAY PHASE *
 * house is empty
-lamp on ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
-heater off ac on 25
-lamp off 5
-lamp on heater on ac off 30
-heater off ac on 10
-lamp off 5
-lamp on 15
-heater on ac off 25
-lamp off 5
-lamp on heater off ac on 30
-heater on ac off 10
-lamp off 5
-lamp on 15
+ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
 * EVENING PHASE *
 * people return and 1 goes to kitchen 1 goes to bed2
 lamp off heater off 20
-dlo open 10
-dlo close 60 
-dlk open 10
-dlk close 30
-dlb open 10
-dlb close 120
-db2b open 40
+dlo open 5
+dlo close 35 
+dlk open 5
+dlk close 20
+dlb open 5
+dlb close 80
+db2b open 30
 * 1 person goes from bed2 to kitchen
-db2b close 40
-dlb open 10
-dlb close 30
-dlk open 10
-dlk close 60
-* they open dining windows and have dinner
-wkr open 10
-wkf open 270
-wkr close 10
-wkf close 20
-* they leave, go to bed1 and then go to backyard
-dlk open 10
-dlk close 90
-db1l open 10
-db1l close 30
-db1o open 10
-db1o close 360
-* they come back from backyard and get ready for bed
-db1o open 10
-db1o close 30
-db1b open 10
-db1b close 90
-db2b open 10
 db2b close 30
-db1b open 10
-db1b close 100 
-db1b open 10
-db1b close 260
-db1l open 35
-dlk open 80
-dlk close 35
+dlb open 5
+dlb close 15
+dlk open 5
+dlk close 30
+* they open dining windows and have dinner
+wkr open 5
+wkf open 120
+wkr close 5
+wkf close 10
+* they leave, go to bed1 and then go to backyard
+dlk open 5
+dlk close 60
+db1l open 5
+db1l close 15
+db1o open 5
+db1o close 270
+* they come back from backyard and get ready for bed
+db1o open 5
+db1o close 15
+db1b open 5
+db1b close 60
+db2b open 5
+db2b close 15
+db1b open 5
+db1b close 90 
+db1b open 5
+db1b close 210
+db1l open 15
+dlk open 30
+dlk close 15
 db1l close 0
