@@ -96,7 +96,8 @@ heater off fan on 30
 heater on fan off 30
 * EVENING PHASE *
 * people return, 1 goes to kitchen to cook, other opens windows and showers
-dlo open 2
+lamp off 1
+dlo open 1
 dlop close 2
 dlk open 2
 wll open 6
