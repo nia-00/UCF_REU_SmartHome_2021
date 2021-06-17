@@ -1,0 +1,153 @@
+* MORNING PHASE * (3 min or 180 sec)
+* family wakes up and goes about their morning
+* bed 1 is parents bed2 is child
+* 2 people leave bed 1, 1 goes to bath 1 goes to living rm
+heater on db1b open db1l open 2
+db1b close db1l close 10
+* 1 person start breakfast in kitchen and is joined by other parent
+dlk open 2
+dlk close 20
+dlb open 2
+dlb close 10
+* child wakes and goes to kitchen 
+db2b open 2
+db2b close 2
+dlk open 2
+dlk close 20
+dlb open 2
+dlb close 6
+* family eats breakfast
+dlk open 2
+dlk close 24
+* 2 people leave kitchen and go to bedrooms
+dlk open 2
+dlk close 6
+dlb open 2
+db1l open dlb close 10
+db2b open 8
+* 2 people leave bedrooms and meet 3rd person in living rm
+db2b close 4
+dlb open 2
+dlb close 10
+db1l close 12
+dlk open 2
+dlk close 12
+* 2 people leave and 1 person remains in the house
+dlo open 2
+dlo close 2
+* MIDDAY PHASE * (peak: 32 min or 1920 sec) (decrease: 2.5 min or 150 sec) (total: 34.5 min or 2070 sec)
+* 1 person opens living rm window, stays in living rm, then goes to bath
+lamp on dlb open 10
+dlb close 10
+dlb open 10
+dlb close 270
+* 1 goes to bed1
+db1l open 10
+db1l close 150
+* they go back to living and go to bath again
+db1l open 10
+db1l close 270
+dlb open 10
+dlb close 60
+dlb open 10
+dlb close 120
+* 1 person goes to kitchen to start lunch
+dlk open 10
+dlk close 120
+* 2 people come back for lunch 1 goes to kitchen 1 to bed2
+dlo open 10
+dlo close 60
+dlk open 10
+dlb open 10
+dlk close 30
+dlb close 60
+db2b open 150
+db2b close 120
+* 1 person goes from bed2 to kitchen
+dlb open 10
+dlb close 60
+dlk open 10
+dlk close 60
+* the 3 eat lunch and 1 person leaves for the afternoon
+wkr open 120
+dlk open 10
+dlk close 110
+dlo open 10
+dlo close 10
+* peak temp reached... begin decrease
+lamp off 0
+* 2 people remain in the house, they leave kitchen
+* 1 person stays in living rm the other goes to bed2
+wkr close 4
+dlk open 2
+dlk close 4
+dlb open 2
+dlb close 4
+db2b open 2
+db2b close 20
+* person in living rm goes to bed1
+db1l open 2
+db1l close 6
+* person in bed2 goes to bath
+db2b open 2
+db2b close 6
+db2b open 2
+db2b close 10
+* person in bed1 goes back to living rm
+db1l open 2
+db1l close 10
+* person in bed2 goes to living rm
+db2b open 2
+db2b close 4
+dlb open 2
+dlb close 10
+wll open 16
+* 1 person in living goes to kitchen to start dinner
+dlk open 2
+dlk close 6
+* EVENING PHASE * (4 min or 240 sec)
+* 1 person comes back in the afternoon 
+dlo open 2
+dlo close 10
+wll close 10
+* 1 person goes to kitchen and 1 goes to bath then bed1
+dlk open 2
+dlk close 5
+dlb open 1
+dlb close 5
+db1b open 1
+db1b close 10
+* person in bed1 goes to kitchen
+db1l open 1
+db1l close 10
+* family eats dinner
+dlk open 1
+dlk close 30
+* 2 people leave kitchen and go to bed1
+dlk open 1
+dlk close 5
+db1l open 1
+db1l close 30
+* person in kitchen goes to living rm
+dlk open 1
+dlk close 10
+* 2 people in bed1 go to living and the 3 relax there
+db1l open 1
+db1l close 30
+* 2 people go to bed1 1 person goes to bath then bed2
+db1l open dlb open 1
+db1l close dlb close 10
+db2b open 1
+* 1 person from bed1 goes to bath as 1 person leaves to bed2
+db1b open 1
+db2b close 1
+db1b close 10
+* 1 person in bed1 opens window then swtiches with person in bath
+db1b open 1
+db1b close 20
+db1b open 1
+db1b close 25
+* bed1 window is closed and person in bath goes back to bed1 to sleep
+db1b open 1
+db1b close 1
+heater off lamp off 0
