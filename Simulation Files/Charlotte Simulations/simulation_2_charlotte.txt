@@ -14,8 +14,8 @@ db2b close db1b close 8
 * people go from bed1 and bath to living rm
 db1l open 2
 db1l close 4
-dbl open wll open 2
-dbl close 2
+dlb open wll open 2
+dlb close 2
 * 1 person goes to kitchen, then the other goes, then they leave together
 dlk open 2
 dlk close 8

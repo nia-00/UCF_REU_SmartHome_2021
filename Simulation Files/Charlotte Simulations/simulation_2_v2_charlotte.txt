@@ -111,11 +111,11 @@ wkr open 5
 * they close windows in dining and go to backyard to eat
 wkf close 5
 wkr close 5
-dblo open 5
-dblo close 40
+db1o open 5
+db1o close 40
 fan on 30
-dblo open 5
-dblo close 5
+db1o open 5
+db1o close 5
 * they come back from backyard and get ready for bed
 wb1b open 5
 wb1l open 5
