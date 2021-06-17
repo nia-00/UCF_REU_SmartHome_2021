@@ -1,6 +1,7 @@
-* MORNING PHASE  *
+* PRELIMINARY PHASE * (4.5 min or 270 sec)
 * start appliances to get to target temp
 lamp on 270
+* MORNING PHASE * (2 min or 120 sec)
 * both people wake up start their mornings
 * 1 person goes to bath other opens windows in bed2
 db1b open 2
@@ -37,7 +38,7 @@ dlb close 2
 wll close 4
 dlo open 2
 dlo close 4
-* MID-DAY PHASE *
+* MID-DAY PHASE * (30 min or 1800 sec)
 * house is empty
 ac on 30
 heater on ac off 30
@@ -99,7 +100,7 @@ heater off ac on 30
 heater on ac off 30
 heater off ac on 30
 heater on ac off 30
-* EVENING PHASE *
+* EVENING PHASE * (4 min or 240 sec)
 * people return and 1 goes to kitchen 1 goes to bed2
 lamp off heater off 10
 dlo open 1

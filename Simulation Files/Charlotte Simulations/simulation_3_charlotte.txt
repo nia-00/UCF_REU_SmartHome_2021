@@ -1,6 +1,7 @@
-* MORNING PHASE *
+* PRELIMINARY PHASE * (4.5 min or 270 sec)
 * start appliances to get to target temp
 lamp on 270
+* MORNING PHASE * (2 min or 120 sec)
 * family wakes up and goes about their morning
 * bed 1 is parents bed2 is child
 * 2 people leave bed 1, 1 goes to bath 1 goes to living rm
@@ -42,7 +43,7 @@ dlk close 10
 * 2 people leave and 1 person remains in the house
 dlo open 5
 dlo close 2
-* MID-DAY PHASE *
+* MID-DAY PHASE * (30 min or 1800 sec)
 * 1 person opens living rm window, stays in living rm, then goes to bath
 wlf open 10
 dlb open 5
@@ -112,7 +113,7 @@ wll open 120
 * 1 person in living goes to kitchen to start dinner
 dlk open 5
 dlk close 5
-* EVENING PHASE *
+* EVENING PHASE * (4 min or 240 sec)
 * 1 person comes back in the afternoon
 lamp off 10 
 dlo open 1
