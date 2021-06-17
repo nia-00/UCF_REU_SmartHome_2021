@@ -5,7 +5,6 @@ import pandas as pd
 
 # This function combines the motor states output file with the sensor data output file.
 def combine_outputs(file1, file2):
-
     with open(file1, "r") as motor, open(file2, "r") as sensor, open("Combined_Output1.csv", "w", newline = '') as of:
             # Make the input readers and the output writer
             motorReader = csv.reader(motor)
@@ -33,12 +32,12 @@ def combine_outputs(file1, file2):
             lineS = 1
 
             # Keeps track of current times for each list
-            currentMotor = motorData[lineM][0]
-            currentSensor = sensorData[lineS][0]
+            currentMotor = datetime.datetime.strptime(motorData[lineM][0], '%H:%M:%S')
+            currentSensor = datetime.datetime.strptime(sensorData[lineS][0], '%H:%M:%S')
 
             # Store the lengths here to save time when accessing in the loop
             motorLen = len(motorData) - 1
-            sensorLen = len(sensorData) - 1
+            sensorLen = len(sensorData) -1
 
             length = motorLen + sensorLen
 
@@ -52,22 +51,29 @@ def combine_outputs(file1, file2):
                 outWriter.writerow(outLine)
 
                 # if we are at the end of both csv files
-                if (lineS + 1) == sensorLen and (lineM + 1) == motorLen:
+                if lineS == sensorLen and lineM == motorLen:
                     break
                 # if motor time is bigger than sensor time, update sensor
                 elif currentMotor > currentSensor:
-                    lineS += 1
-                    currentSensor = sensorData[lineS][0]
+                    if lineS < sensorLen:
+                        lineS += 1
+                        currentSensor = datetime.datetime.strptime(sensorData[lineS][0], '%H:%M:%S')
+                    else:
+                        lineM += 1
                 # if sensor time is bigger than motor time, update motor
                 elif currentMotor < currentSensor:
-                    lineM += 1
-                    currentMotor = motorData[lineM][0]
+                    if lineM < motorLen:
+                        lineM += 1
+                        currentMotor = datetime.datetime.strptime(motorData[lineM][0], '%H:%M:%S')
+                    else:
+                        lineS += 1
                 # if both times are equal, update both
                 else:
                     i += 1
                     lineS += 1
                     lineM += 1
-                    currentSensor = sensorData[lineS][0]
-                    currentMotor = motorData[lineM][0]
+                    currentSensor = datetime.datetime.strptime(sensorData[lineS][0], '%H:%M:%S')
+                    currentMotor = datetime.datetime.strptime(motorData[lineM][0], '%H:%M:%S')
 
-combine_outputs("appliance_and_motor_states1.csv", "mondayAfternoonTest.csv")
+
+combine_outputs("charlotte_sim_1_cooltoofast_states.csv", "cleaned_charlotte_sim_1_cooltoofast_sensors.csv")
