@@ -90,7 +90,7 @@ heater on ac off 30
 heater off ac on 30
 * AFTERNOON PHASE * (14 min or 840 sec)
 * person comes back home and goes to drop their stuff in bed2
-ac off dlo open 10
+dlo open 10
 dlo close 30
 dlb open 10
 db2b open 60
