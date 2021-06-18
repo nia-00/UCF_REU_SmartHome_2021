@@ -1,29 +1,29 @@
 * PRELIMINARY PHASE * (2 min or 120 sec)
 * turn on lamp to get to target temp
 lamp on 120
-* MORNING PHASE * (4 min or 210 sec)
+* MORNING PHASE * (4 min or 240 sec)
 * person wakes up and goes from bed2 to bath to bed2 to bath to living rm
-ac on db2b open 2
+ac on db2b open 5
 db2b close 30
-db2b open 2
+db2b open 5
 db2b close 20
-db2b open 2
+db2b open 5
 db2b close 10
-dlb open 2
+dlb open 5
 dlb close 10
 * person goes to kitchen to eat then comes out 
-dlk open 2
+dlk open 5
 dlk close 50
-dlk open 2
+dlk open 5
 dlk close 20
 * person goes back to bed 2 thru the bath 
 dlb open 10
-db2b open 30
+db2b open 35
 * person walks back out of bed 2 and bath and leaves house
-db2b close 2
+db2b close 5
 dlb close 10
-dlo open 3
-dlo close 3
+dlo open 5
+dlo close 5
 * MIDDAY PHASE * (peak: 29 min or 1740 sec) (decrease: 4 min or 240 sec) (total: 33 min or 1980 sec)
 * house is empty
 heater on ac off 30
