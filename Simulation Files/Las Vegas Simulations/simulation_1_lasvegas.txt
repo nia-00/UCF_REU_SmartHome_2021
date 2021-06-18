@@ -1,0 +1,124 @@
+* PRELIMINARY PHASE * (2 min or 120 sec)
+* turn on lamp to get to target temp
+lamp on 120
+* MORNING PHASE * (4 min or 210 sec)
+* person wakes up and goes from bed2 to bath to bed2 to bath to living rm
+ac on db2b open 2
+db2b close 30
+db2b open 2
+db2b close 20
+db2b open 2
+db2b close 10
+dlb open 2
+dlb close 10
+* person goes to kitchen to eat then comes out 
+dlk open 2
+dlk close 50
+dlk open 2
+dlk close 20
+* person goes back to bed 2 thru the bath 
+dlb open 10
+db2b open 30
+* person walks back out of bed 2 and bath and leaves house
+db2b close 2
+dlb close 10
+dlo open 3
+dlo close 3
+* MIDDAY PHASE * (peak: 29 min or 1740 sec) (decrease: 4 min or 240 sec) (total: 33 min or 1980 sec)
+* house is empty
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+lamp off 0
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+heater on ac off 30
+heater off ac on 30
+* AFTERNOON PHASE * (3.5 min or 210 sec)
+* person comes back home and goes to drop their stuff in bed2
+dlo open 2
+dlo close 10
+dlb open 2
+db2b open 20
+db2b close 2
+* person goes thru bath and living rm to go to kitchen
+dlb open 2
+dlb close 15
+dlk open 2
+dlk close 30
+* person eats dinner in living rm and then puts dishes in kitchen
+dlk open 2
+dlk close 30
+dlk open 2
+dlk close 10
+* person goes to bath then to sleep in bed2
+dlb open 2
+dlb close 15
+db2b open 2
+db2b close 25
+db2b open 5
+dlb open 7
+dlk open 15
+dlk close 6
+dlb close 2
+db2b close 2
+ac off 0
