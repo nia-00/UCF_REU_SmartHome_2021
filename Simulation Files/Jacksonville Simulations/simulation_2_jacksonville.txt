@@ -1,7 +1,7 @@
 * MORNING PHASE * (6 min or 360 sec)
 * both people wake up and start their mornings
 * 1 person goes to bath
- heater on db1b open 5
+lamp on db1b open 5
 db1b close 30
 * the 2 people switch off in bath
 db2b open 5
@@ -9,12 +9,12 @@ db1b open 10
 db2b close 5
 db1b close 40
 * people go from bed1 and bath to living rm
-heater off db1l open 5
+db1l open 5
 db1l close 30
 dlb open 5
 dlb close 20
 * 1 person goes to kitchen, then the other goes, then they leave together
-heater on dlk open 5
+dlk open 5
 dlk close 20
 dlk open 5
 dlk close 60

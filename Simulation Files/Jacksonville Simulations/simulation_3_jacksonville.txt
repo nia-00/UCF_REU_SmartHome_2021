@@ -2,7 +2,7 @@
 * family wakes up and goes about their morning
 * bed 1 is parents bed2 is child
 * 2 people leave bed 1, 1 goes to bath 1 goes to living rm
-heater on db1b open db1l open 5
+lamp on db1b open db1l open 5
 db1b close db1l close 15
 * 1 person start breakfast in kitchen and is joined by other parent
 dlk open 5

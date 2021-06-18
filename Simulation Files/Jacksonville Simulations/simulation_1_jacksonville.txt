@@ -1,15 +1,15 @@
 * MORNING PHASE * (6 min or 360 sec)
 * person wakes up and goes from bed2 to bath to bed2 to bath to living rm
-ac on db2b open 5
+lamp on ac on db2b open 5
 db2b close 50
 db2b open 5
 db2b close 40
 db2b open 5
-heater off db2b close 10
+db2b close 10
 dlb open 5
 dlb close 25
 * person goes to kitchen to eat then comes out 
-heater on dlk open 5
+dlk open 5
 dlk close 70
 dlk open 5
 dlk close 30
