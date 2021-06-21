@@ -1,130 +1,285 @@
-* MORNING PHASE  *
+* PRELIMINARY PHASE * (4.5 min or 270 sec)
 * start appliances to get to target temp
 lamp on 270
+* MORNING PHASE * (2 min or 120 sec)
 * both people wake up start their mornings
-* 1 person goes to bath other goes to kitchen to make breakfast from bedroom 1
+* 1 person goes to bath other opens windows in bed2
 db1b open 2
-db1l open 2
-dlk open 4
+wb2b open 2
+wb2r open 4
 db1b close 6
-* person gets dressed in bedroom, eat in dining room together
-db1b open 2
-db1b close 6
+* the 2 people switch off in bath
+db2b open db1b open 2
+db2b close db1b close 8
+* people go from bed1 and bath to living rm
 db1l open 2
+db1l close 4
+dlb open wll open 2
+dlb close 2
+* 1 person goes to kitchen, then the other goes, then they leave together
 dlk open 2
 dlk close 8
-* one goes to living room and opens windows, other goes to bath
-dlk open 4
-bd1l open 4
-wll open 4
-db1b open 4
-db1b close 22
-wlf open 10
-dlb open 4
-* person gets dressed in bedroom 1 and cleans kitchen, goes to living room
-db1b open 6
-db1b close 2
-db1l open 2
-db1l close 2
-dlk open 6
-dlk close 2
-wll close 4
-wlf close 4
-dlo open 4
-dlo close 2
-* MID-DAY PHASE *
-* house is empty
-ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-heater off ac on 30
-heater on ac off 30
-heater off fan on 30
-heater on fan off 30
-* EVENING PHASE *
-* people return, 1 goes to kitchen to cook, other opens windows and showers
-lamp off 1
-dlo open 1
-dlop close 2
 dlk open 2
-wll open 6
-wlf open 6
+dlk close 32
+dlk open 2
+dlk close 6
+* they go back to their rooms and close open windows
 db1l open 2
-db1b open 2
-db1b close 8
 dlb open 2
-fan on 10
-wkf open 4
-wkr open 5
-* they close windows in dining and go to backyard to eat
-wkf close 5
-wkr close 5
-db1o open 5
-db1o close 40
-fan on 30
-db1o open 5
-db1o close 5
-* they come back from backyard and get ready for bed
-wb1b open 5
-wb1l open 5
-fan on 15
-db1b close 15
-db1b open 5
-db1b close 15
-db1l close 15
 db1l close 2
-wb1l close 5
-db1o close 5
+dlb close 2
+db2b open wb1b close 4
+wb2r close db1l open 2
+* they go to the living rm and leave the house together
+db1l close db2b open 2
+db2b close 4
+dlb open 2
+dlb close 2
+wll close 4
+dlo open 2
+dlo close 4
+* MID-DAY PHASE * (30 min or 1800 sec)
+* house is empty
+ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+* EVENING PHASE * (4 min or 240 sec)
+* people return and 1 goes to kitchen 1 goes to bed2
+lamp off heater off 10
+dlo open 1
+dlo close 7
+dlk open 1
+dlk close 4
+dlb open 1
+dlb close 14
+db2b open 6
+* 1 person goes from bed2 to kitchen
+db2b close 6
+dlb open 1
+dlb close 3
+dlk open 1
+dlk close 6
+* they open dining windows and have dinner
+wkr open 1
+wkf open 20
+wkr close 1
+wkf close 3
+* they leave, go to bed1 and then go to backyard
+dlk open 1
+dlk close 12
+db1l open 1
+db1l close 3
+db1o open 1
+db1o close 50
+* they come back from backyard and get ready for bed
+db1o open 1
+db1o close 3
+db1b open 1
+db1b close 14
+db2b open 1
+db2b close 3
+db1b open 1
+db1b close 10 
+db1b open 1
+db1b close 40
+db1l open 3
+dlk open 6
+dlk close 3
+db1l close 0
