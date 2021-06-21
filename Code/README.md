@@ -1,4 +1,4 @@
-#Code Overview
+# Code Overview
 
 This folder contains the code we have written for this project organized into
 subfolders based on type.
@@ -15,4 +15,4 @@ our two Raspberry Pis.
 
 The [Trimmed Code](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Code/Trimmed%20Code)
 folder contains the original code for establishing a client server connection that
-we modeled our code after. 
+we modeled our code after.
