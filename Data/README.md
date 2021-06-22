@@ -4,8 +4,13 @@ The folders above contain different kinds of data we used for this project.
 
 The [Simulation_Data](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Simulation_Data) folder contains all the data we have collected from the house when
 running simulations. There is a subfolder for the separate sensor and actuator readings
-and a subfolder for the cleaned combine data files we will use for our machine
-learning algorithms.
+and a subfolder for the cleaned combined data files we will use for our machine
+learning algorithms. The sensor and motor output files are combined using their
+timestamps. The sensor readings and motor states that happen in the same time range
+are combined into one line, so there are some times that are repeated for both
+sensor readings and motor readings. This is because these data points are collected
+at different time intervals. There may be multiple sensor readings for one state
+of the house and multiple states for one sensor reading. 
 
 The [Stabilization](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Stabilization) folder contains the stabilization data collected for each of our
 appliances. This data is used to find the temperature and humidity limitations of
