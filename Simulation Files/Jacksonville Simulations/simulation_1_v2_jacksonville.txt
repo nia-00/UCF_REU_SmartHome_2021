@@ -1,0 +1,247 @@
+* MORNING PHASE * (6 min or 360 sec)
+* person wakes up and goes from bed2 to bath to bed2 to bath to living rm
+lamp on ac on db2b open 5
+db2b close 50
+db2b open 5
+db2b close 40
+db2b open 5
+db2b close 10
+dlb open 5
+dlb close 25
+* person goes to kitchen to eat then comes out 
+dlk open 5
+dlk close 70
+dlk open 5
+dlk close 30
+* person goes back to bed 2 thru the bath 
+dlb open 20
+db2b open 50
+* person walks back out of bed 2 and bath and leaves house
+db2b close 5
+dlb close 20
+dlo open 5
+dlo close 5
+* MIDDAY PHASE * (peak: 28 min or 1680 sec) (decrease: 4 min or 240 sec) (total: 32 min or 1920 sec)
+* house is empty
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+lamp off 0
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+heater on ac off 10
+heater off ac on 10
+* AFTERNOON PHASE * (14 min or 840 sec)
+* person comes back home and goes to drop their stuff in bed2
+dlo open 10
+dlo close 30
+dlb open 10
+db2b open 60
+db2b close 10
+* person goes thru bath and living rm to go to kitchen
+dlb open 10
+dlb close 60
+dlk open 10
+dlk close 90
+* person eats dinner in living rm and then puts dishes in kitchen
+dlk open 10
+dlk close 120
+dlk open 10 
+dlk close 30
+* person goes to bath then to sleep in bed2
+dlb open 10
+dlb close 60
+db2b open 10
+db2b close 150
+db2b open 10
+dlb open 30
+dlk open 60
+dlk close 30
+dlb close 10
+db2b close 10
+ac off 0
