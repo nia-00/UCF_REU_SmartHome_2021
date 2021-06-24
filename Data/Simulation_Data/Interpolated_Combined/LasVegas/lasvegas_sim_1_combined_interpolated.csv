@@ -1,5 +1,5 @@
 Sensor Time,Motor Time,S4_Humidity,S4_Temperature,S6_Humidity,S6_Temperature,S12_Humidity,S12_Temperature,S18_Humidity,S18_Temperature,S19_Humidity,S19_Temperature,S24_Humidity,S24_Temperature,S25_Humidity,S25_Temperature,S26_Humidity,S26_Temperature,lamp,heater,fan,ac,Bedroom 2 to Bathroom,Bedroom 1 to Living Room,Living Room to Kitchen,Living Room to Bathroom,Bedroom 1 to Bathroom,Living Room to Outside,Bedroom 1 to Outside,Bedroom 1 Left Window,Living Room Left Window,Bedroom 2 Right Window,Kitchen Right Window,Bedroom 2 Back Window,Living Room Front Window,Kitchen Front Window,Bedroom 1 Back Window
-12:06:22,12:06:29,50.4,72.3,53.5,70.7,52.3,71.1,,,,,53.6,70.9,52.4,71.1,52.6,71.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12:06:22,12:06:29,50.4,72.3,53.5,70.7,52.3,71.1,52.9,70.7,54.0,71.1,53.6,70.9,52.4,71.1,52.6,71.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 12:06:37,12:06:29,50.3,72.5,53.6,70.7,52.4,71.1,52.9,70.7,54.0,71.1,53.7,70.9,52.5,71.1,52.6,71.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 12:06:37,12:06:29,50.3,72.5,53.6,70.7,52.4,71.1,52.9,70.7,54.0,71.1,53.7,70.9,52.5,71.1,52.6,71.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 12:06:37,12:06:29,50.3,72.5,53.6,70.7,52.4,71.1,52.9,70.7,54.0,71.1,53.7,70.9,52.5,71.1,52.6,71.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
