@@ -26,7 +26,7 @@ class Home:
     # These next few functions returns a list of the names of the different
     # objects in the house. This is used later to create the column names
     # for the output csv file.
-    def getRooms(self):
+    def getRooms(self)->list:
         rL = []
         for r in self.rooms:
             rL.append(r.name)
