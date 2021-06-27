@@ -1,8 +1,6 @@
 Time,S4_Humidity,S4_Temperature,S6_Humidity,S6_Temperature,S12_Humidity,S12_Temperature,S18_Humidity,S18_Temperature,S19_Humidity,S19_Temperature,S24_Humidity,S24_Temperature,S25_Humidity,S25_Temperature,S26_Humidity,S26_Temperature,lamp,heater,fan,ac,Bedroom 2 to Bathroom,Bedroom 1 to Living Room,Living Room to Kitchen,Living Room to Bathroom,Bedroom 1 to Bathroom,Living Room to Outside,Bedroom 1 to Outside,Bedroom 1 Left Window,Living Room Left Window,Bedroom 2 Right Window,Kitchen Right Window,Bedroom 2 Back Window,Living Room Front Window,Kitchen Front Window,Bedroom 1 Back Window
 12:53:23,52.6,70.2,54.3,69.8,53.3,70.2,53.0,70.0,55.2,70.0,54.6,69.6,53.7,70.0,53.6,70.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 12:53:29,52.7,70.3,54.3,69.8,53.3,70.2,52.9,70.0,55.2,70.0,54.6,69.6,53.6,70.0,53.5,70.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-12:53:29,52.7,70.3,54.3,69.8,53.3,70.2,52.9,70.0,55.2,70.0,54.6,69.6,53.6,70.0,53.5,70.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-12:53:29,52.7,70.3,54.3,69.8,53.3,70.2,52.9,70.0,55.2,70.0,54.6,69.6,53.6,70.0,53.5,70.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 12:53:29,52.7,70.3,54.3,69.8,53.3,70.2,52.9,70.0,55.2,70.0,54.6,69.6,53.6,70.0,53.5,70.3,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 12:53:48,52.7,70.3,54.3,69.8,53.3,70.2,52.9,70.0,55.2,70.0,54.6,69.6,53.6,70.0,53.5,70.3,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 12:54:10,52.3,70.9,54.2,69.8,53.2,70.2,52.9,70.0,55.2,70.0,54.5,69.6,53.6,70.0,53.6,70.3,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
