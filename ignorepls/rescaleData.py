@@ -2,9 +2,10 @@ import csv
 import pandas as pd
 import numpy as np
 from numpy import genfromtxt
+from csv import reader
 
 
-def clean_file(r_file, w_file, low_temp, low_hum, denom_temp, denom_hum, times, sensors, motors):
+def clean_file(r_file, w_file, low_temp, low_hum, denom_temp, denom_hum, times, sensors, motors, df2_list):
     # Turns data into 2D numpy array
     data = genfromtxt(r_file, delimiter=',')
 
@@ -15,8 +16,9 @@ def clean_file(r_file, w_file, low_temp, low_hum, denom_temp, denom_hum, times, 
     results = pd.read_csv(r_file)
     column_headers = results.head(0)
     print(column_headers)
+    print(type(column_headers))
     num_of_rows = len(results)
-    num_of_cols = data[0].size - 2
+    num_of_cols = data[0].size - 1
 
     # Remove all NaN (headings and times), turns data into 1D array
     data = data[~np.isnan(data)]
@@ -28,8 +30,46 @@ def clean_file(r_file, w_file, low_temp, low_hum, denom_temp, denom_hum, times, 
     for s, array in enumerate(data):
         sensors_data_only.append(array[0:16])
 
-    print("SENSORS BEFORE: ", sensors_data_only)
+    print("array before\n\n: ", sensors_data_only)
 
+    for y, array in enumerate(sensors_data_only):
+        for x, element in enumerate(array):
+            if x % 2 == 0:
+                array[x] = ((((element - 44.7) / 7.4) * denom_hum) + low_hum).__round__(1)
+            else:
+                array[x] = ((((element - 70) / 10) * denom_temp) + low_temp).__round__(1)
+
+    print("array after\n\n: ", sensors_data_only)
+
+    for x, array in enumerate(sensors_data_only):
+        sensors_data_only[x] = list(array)
+    df_sensors = pd.DataFrame(sensors_data_only)
+    # df_sensors = df.transpose()
+
+    # column_headers = list(column_headers)
+
+    column_headers = pd.concat([times, df_sensors, motors], axis=1)
+    #real_df.insert(column_headers, loc=0)
+
+    # print(column_headers)
+    # real_df.iloc[0] = [column_headers]
+    #real_df = real_df.iloc[1:, :]
+
+    print(column_headers)
+
+    column_headers.to_csv(path_or_buf=w_file, index=None)
+
+    # for x, temps in enumerate(sensors_data_only):
+    #     sensors_data_only[x] = temps.append(df2_list[x])
+
+    # with open(w_file, 'w', newline='') as f:
+    #    writer = csv.writer(f)
+    #    writer.writerow(column_headers)
+    #    for row in real_df:
+    #        writer.writerow(row)
+
+
+'''
     for col_num, column in enumerate(sensors_data_only):
         if col_num % 2 == 0:
             for row_num, val in enumerate(column):
@@ -42,7 +82,7 @@ def clean_file(r_file, w_file, low_temp, low_hum, denom_temp, denom_hum, times, 
 
     print("SENSORS AFTER: ", sensors_data_only)
 
-
+'''
 '''
     for x in range(16):
         for element in sensors_data_only[x]:
@@ -79,19 +119,23 @@ def clean_file(r_file, w_file, low_temp, low_hum, denom_temp, denom_hum, times, 
 if __name__ == "__main__":
     min_temp = 44
     denominator_temp = 31
-    min_hum = 36
+    min_hum = 37
     denominator_hum = 34
 
-    original_file = input("Enter file path to rescale: ")
-    read_file = original_file.replace('\\', '/')
-    read_file = read_file.replace('"', '')
+    # original_file = input("Enter file path to rescale: ")
+    original_file = "C:/Users/welcm/PycharmProjects/.smartHomeFiles/charlotte_sim_1_successful_complete_time.csv"
+    write_file = original_file.replace("complete_time", "RESCALED2")
 
-    write_file = read_file.replace("combined_interpolated", "3complete")
+    # read_file = original_file.replace('\\', '/')
+    # read_file = read_file.replace('"', '')
+    read_file = original_file
 
     print("Read file: ", original_file)
     print("Write file: ", write_file.replace("/", "\\"))
 
-    df0 = pd.read_csv(read_file, usecols=['Sensor Time', 'Motor Time'])
+    headers = pd.read_csv(read_file, nrows=1)
+
+    df0 = pd.read_csv(read_file, usecols=['Time'])
 
     df1 = pd.read_csv(read_file, usecols=['S4_Humidity', 'S4_Temperature', 'S6_Humidity', 'S6_Temperature',
                                           'S12_Humidity', 'S12_Temperature', 'S18_Humidity', 'S18_Temperature',
@@ -105,7 +149,16 @@ if __name__ == "__main__":
                                           "Bedroom 2 Right Window", "Kitchen Right Window", "Bedroom 2 Back Window",
                                           "Living Room Front Window", "Kitchen Front Window", "Bedroom 1 Back Window"])
 
-    with open(read_file, 'r') as master, open(write_file, 'w') as matched:
-        matched.write(next(master))
+    df2_list = df2.values.tolist()
+    print(df2_list)
 
-    clean_file(read_file, write_file, min_temp, min_hum, denominator_temp, denominator_hum, df0, df1, df2)
+    # with open(read_file, 'r') as read_obj:
+    # pass the file object to reader() to get the reader object
+    #    csv_reader = reader(read_obj)
+    # Pass reader object to list() to get a list of lists
+    #    list_of_rows = list(csv_reader)
+
+    # with open(read_file, 'r') as master, open(write_file, 'w') as matched:
+    #    matched.write(next(master))
+
+    clean_file(read_file, write_file, min_temp, min_hum, denominator_temp, denominator_hum, df0, df1, df2, df2_list)
