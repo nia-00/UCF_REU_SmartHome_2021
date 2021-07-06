@@ -4,7 +4,7 @@ import numpy as np
 from numpy import genfromtxt
 
 
-def clean_file(r_file, w_file, i_w_file, recorded_times):
+def clean_file(r_file, w_file, recorded_times):
     # Turns data into 2D numpy array
     data = genfromtxt(r_file, delimiter=',')
 
@@ -75,13 +75,11 @@ if __name__ == "__main__":
     if file_keyword in read_file:
         write_file = read_file.replace("original", "cleaned")
         end_name_index = write_file.find('.csv')
-        interpolate_write_file = write_file[:end_name_index] + '_interpolated' + write_file[end_name_index:]
     else:
         print("File path not entered with conventional naming for this project.")
 
     print("Original file name: ", original_file)
     print("Cleaned file name: ", write_file.replace("/", "\\"))
-    print("Interpolated file name: ", interpolate_write_file.replace("/", "\\"))
 
     df = pd.read_csv(read_file)
     times = df.Time.to_list()
@@ -89,4 +87,4 @@ if __name__ == "__main__":
     with open(read_file, 'r') as master, open(write_file, 'w') as matched:
         matched.write(next(master))
 
-    clean_file(read_file, write_file, interpolate_write_file, times)
+    clean_file(read_file, write_file, times)
