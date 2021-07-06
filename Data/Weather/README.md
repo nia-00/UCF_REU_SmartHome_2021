@@ -25,11 +25,11 @@ we chose to model. All weather data is sourced from https://www.wunderground.com
 
 The [Daily](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Original_Files)
 folder contains hourly temperature and humidity data of the cities for the day we
-selected(see lines 8-12). It also contains a folder of this data represented in
+selected (see lines 12-16). It also contains a folder of this data represented in
 multi-line graphs. 
 
 The [Monthly/CSV](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Monthly/CSV)
-folder contains daily weather data of the cities for the month we selected (see lines 8-12).
+folder contains daily weather data of the cities for the month we selected (see lines 12-16).
 
 The [Original_Files](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Original_Files)
 folder contains weather data for our chosen cities on our chosen days. This includes Max
