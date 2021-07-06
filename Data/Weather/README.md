@@ -15,13 +15,21 @@ the United States (only taking into account temperature and humidity):
 * Jacksonville, FL - Hot, Humid - July - July 26, 2020
 * Las Vegas, NV - Hot, Dry - June - June 19, 2020
 
+We selected months we felt represented the city and temperature/humidity type sought 
+after. The specific day was chosen by finding the average max temperature, average 
+temperature, low temperature, max humidity, average humidity, and min humidity of 
+the chosen month. Then, the average difference of each of the six aforementioned
+factors was calculated for each day in the chosen month. The day with the lowest
+total average difference (i.e. most representable day for the month) was the day 
+we chose to model. All weather data is sourced from https://www.wunderground.com.
+
 The [Daily](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Original_Files)
 folder contains hourly temperature and humidity data of the cities for the day we
-selected(see lines 8-12). It also contains a folder of this data represented in
-multi-line graphs.
+selected (see lines 12-16). It also contains a folder of this data represented in
+multi-line graphs. 
 
 The [Monthly/CSV](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Monthly/CSV)
-folder contains daily weather data of the cities for the month we selected (see lines 8-12).
+folder contains daily weather data of the cities for the month we selected (see lines 12-16).
 
 The [Original_Files](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Weather/Original_Files)
 folder contains weather data for our chosen cities on our chosen days. This includes Max

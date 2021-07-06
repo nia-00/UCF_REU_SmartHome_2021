@@ -3,8 +3,8 @@ from datetime import datetime
 
 
 # This function combines the motor states output file with the sensor data output file.
-def combine_outputs(file1, file2):
-    with open(file1, "r") as motor, open(file2, "r") as sensor, open("Combined_Output1.csv", "w", newline='') as of:
+def combine_outputs(file1, file2, new_filename):
+    with open(file1, "r") as motor, open(file2, "r") as sensor, open(new_filename, "w", newline='') as of:
         # Make the input readers and the output writer
         motor_reader = csv.reader(motor)
         sensor_reader = csv.reader(sensor)
@@ -76,5 +76,21 @@ def combine_outputs(file1, file2):
     print("Successfully combined!")
 
 
-combine_outputs("",
-                "")
+original_read_file = input("Enter original sensors data file path: ")
+
+sensor_data = original_read_file.replace('\\', '/')
+sensor_data = sensor_data.replace('"', '')
+sensor_data = sensor_data.replace("original", "cleaned")
+
+motor_states = sensor_data.replace("cleaned_", "")
+motor_states = motor_states.replace("sensors", "states")
+
+filename = sensor_data.rsplit('/', 1)
+filename = filename[1].replace("cleaned_", "")
+filename = filename.replace("sensors", "combined")
+
+print("sensor: ", sensor_data)
+print("motor: ", motor_states)
+print("new filename: ", filename)
+
+combine_outputs(motor_states, sensor_data, filename)

@@ -10,13 +10,13 @@ df = pd.read_csv('/home/pi/Desktop/UCF-REU-SmartHome/aaaaaa8.csv', usecols=['Tim
 # Preparing data
 multiline_df = df
 
-trace1_multiline = go.Scatter(x=multiline_df['Time on 05 Jun 2021'], y=multiline_df['S4_Temperature'], mode='lines', name='Temperature')
-trace2_multiline = go.Scatter(x=multiline_df['Time on 05 Jun 2021'], y=multiline_df['S4_Humidity'], mode='lines', name='Humidity')
+trace1_multiline = go.Scatter(x=multiline_df['Time'], y=multiline_df['S4_Temperature'], mode='lines', name='Temperature')
+trace2_multiline = go.Scatter(x=multiline_df['Time'], y=multiline_df['S4_Humidity'], mode='lines', name='Humidity')
 data_multiline = [trace1_multiline, trace2_multiline]
 
 
 # Preparing layout
-layout = go.Layout(title='Stabilization Point - Lamp - High Point (05 Jun 2021)', xaxis_title="Time",
+layout = go.Layout(title='Title)', xaxis_title="Time",
                    yaxis_title="Temperature")
 
 # Plot the figure and saving in a html file

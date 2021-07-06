@@ -18,7 +18,7 @@ a smart-home program that regulates temperature in an energy efficient and cost 
 We had many different goals for this project. The main goal was to expand upon
 the previous state of the house and make data collection and experimentation with
 the house easier and more widely applicable to locations with different climates.
-In addition to this, we wanted to find a machine learning algorithm that was able
+In addition to this, we wanted to find a machine learning algorithm that was able to
 very accurately predict the internal temperatures of the house. This would allow
 future students who expand on this project to focus on developing an intelligent
 agent that is able to regulate the temperature and humidity of the house in an
