@@ -18,7 +18,8 @@ timestamps. The sensor readings and motor states that happen in the same time ra
 are combined into one line, so there are some times that are repeated for both
 sensor readings and motor readings. This is because these data points are collected
 at different time intervals. There may be multiple sensor readings for one state
-of the house and multiple states for one sensor reading.
+of the house and multiple states for one sensor reading. There is another subfolder
+that contains the clean combined data with the time as a sinusoidal variable.
 
 The [Stabilization](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data/Stabilization)
 folder contains all of the appliance stabilization data we collected. This
