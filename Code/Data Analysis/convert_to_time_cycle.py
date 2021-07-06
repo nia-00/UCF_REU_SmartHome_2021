@@ -13,7 +13,7 @@ def convert_to_time_cycle(read_file_path):
     times_in_seconds = times_in_seconds-min(times_in_seconds)
     # Scale all times between 0 and 1
     times_in_seconds = times_in_seconds / max(times_in_seconds)
-    # Our simulation represents 15 hour days
+    # Our simulations represent a 15-hour period which start at 7am
     times_in_seconds = times_in_seconds * 15 * 60 * 60 + 7*60*60
     day = 24*60*60
     second_to_hour = 60*60
