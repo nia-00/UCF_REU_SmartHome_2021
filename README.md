@@ -2,8 +2,7 @@
 
 ## Table of Contents
 1. [Background](#background)
-2. [Methodology](#methodology)
-3. [Usage](#usage)
+2. [Navigation](#methodology)
 4. [Resources](#resources)
 
 ## Background
@@ -14,11 +13,24 @@ to create a program that implements smart-home behavior inside the model house t
 automatically react to changes in the environment. Our ultimate goal is to develop
 a smart-home program that regulates temperature in an energy efficient and cost effective manner.
 
-## Methodology
+## Navigation
+The work we have done over the course of this internship is split up into the following
+three folders.
 
+The [Code](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Code)
+folder contains all of the code we wrote to control the house, collect
+data from the sensors, prepare the data for analysis, and analyze the data with
+different machine learning algorithms.
 
-## Usage
+The [Data](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Data)
+folder contains all of the data we collected in each stage of the data
+preparation process. It also contains the weather data we modeled our simulations
+after, appliance stabilization data we used to determine the timing of our
+simulations, and graphs of the performances of the machine learning algorithms.
 
+The [Simulation Files](https://github.com/nia-00/UCF_REU_SmartHome_2021/tree/main/Simulation%20Files)
+folder contains all of our simulations as well as a detailed 
+description of each type of simulation and the keys and commands used within them.
 
 ## Resources
 * [Matteo Mendula's 2020 Repository](https://github.com/MatteoMendula/ScaledHome_Control_System)
