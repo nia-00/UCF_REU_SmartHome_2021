@@ -4,14 +4,14 @@ import plotly.graph_objs as go
 from time import strftime
 
 # Load CSV file from Datasets folder
-df = pd.read_csv('/home/pi/Desktop/UCF-REU-SmartHome/aaaaaa8.csv', usecols=['Time on 05 Jun 2021', 'S4_Temperature'])
+df = pd.read_csv('filepath', usecols=['Time', 'S4_Temperature'])
 #df['Date'] = pd.to_datetime(df['Date'])
 
 # Preparing data
-data = [go.Scatter(x=df['Time on 05 Jun 2021'], y=df['S4_Temperature'], mode='lines', name='Death')]
+data = [go.Scatter(x=df['Time'], y=df['S4_Temperature'], mode='lines', name='name')]
 
 # Preparing layout
-layout = go.Layout(title='Stabilization Point - Lamp - High Point (05 Jun 2021)', xaxis_title="Time",
+layout = go.Layout(title='Title', xaxis_title="Time",
                    yaxis_title="Temperature")
 
 # Plot the figure and saving in a html file
