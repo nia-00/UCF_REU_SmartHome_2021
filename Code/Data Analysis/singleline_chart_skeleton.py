@@ -5,7 +5,6 @@ from time import strftime
 
 # Load CSV file from Datasets folder
 df = pd.read_csv('filepath', usecols=['Time', 'S4_Temperature'])
-#df['Date'] = pd.to_datetime(df['Date'])
 
 # Preparing data
 data = [go.Scatter(x=df['Time'], y=df['S4_Temperature'], mode='lines', name='name')]
