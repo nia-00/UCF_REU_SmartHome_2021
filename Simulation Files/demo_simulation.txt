@@ -1,0 +1,33 @@
+* open front door, enter living room, open windows *
+dlo open 2
+dlo close 0
+wlf open 0
+wll open 2
+* go into bed 1, open a window and go outside *
+db1l open 1
+wb1l open 1
+dblo open 2
+dblo close 0
+db1l close 0
+* enter bathroom then bed 2 *
+db1b open 1
+db1b close 0
+db2b open 1
+wb2b open 0
+wb2r open 1
+wb2b close 0
+wb2r close 0
+db2b close 0
+dlb open 1
+dlb close 0
+* enter kitchen, leave kitchen, close windows, leave home *
+dlk open 1
+wkr open 0
+wkf open 1
+wkr close 0
+wkf close 0
+dlk close 1
+wll close 0
+wlf close 1
+dlo open 1
+dlo close 0
