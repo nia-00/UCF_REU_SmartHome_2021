@@ -1,3 +1,4 @@
+lamp on 16
 * open front door, enter living room, open windows *
 dlo open 2
 dlo close 0
@@ -10,6 +11,7 @@ dblo open 2
 dblo close 0
 db1l close 0
 * enter bathroom then bed 2 *
+fan on 8
 db1b open 1
 db1b close 0
 db2b open 1
@@ -31,3 +33,5 @@ wll close 0
 wlf close 1
 dlo open 1
 dlo close 0
+lamp off 0
+fan off 0
